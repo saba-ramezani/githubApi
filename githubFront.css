@@ -1,0 +1,201 @@
+/*Setting the main margin and padding to 0 so theres no space in the edeges*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Setting the background to a custom image and making it cover the whole screen with full size and also making it flex so the child elements align automatically*/
+.background { 
+    background-image: url("images/github.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/*Setting the container size, position, opacity, making it flex and setting the flex-direction row so the child elements will be placed together align with the x axis,
+ items are placed in the center of the parent and by using justify-content: space-around, the space is distributed evenly between the items,
+ by using transform: translate(-50%, -50%), elements move 50% backward, in both horizental and vertical direction so it is placed in the center*/
+.container {
+    transform: translate(-50%, -50%);
+    opacity:0.9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 60%;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+}
+
+/*Setting the background of the output box and making it cover the whole box, 
+setting its width and height and making the position relative to the parent, making it round in the corners, 
+by setting flex-wrap: wrap, the child elements break into multiple lines instead placing in one line altogether*/
+.output {
+    background-image: url("images/blue.jfif");
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2em;
+    position: relative;
+    background-size: cover;
+    border-radius: 25px;
+    top: 19%;
+    left: 10%;
+    bottom: 19%;
+    right: 10%;
+    width: 38cm;
+    height: 20cm;
+}
+
+
+
+
+/*Setting the background of the input box and making it cover the whole box, 
+setting its width and height and making the position relative to the parent, making it round in the corners, 
+by setting flex-wrap: wrap, the child elements break into multiple lines instead placing in one line altogether,
+by setting flex-direction: column, child elements will be placed align with the direction of y axis*/
+.input {
+    background-image: url("images/blue.jfif");
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    background-size: cover;
+    top: 19%;
+    left: 15%;
+    bottom: 19%;
+    right: 15%;
+    width: 10cm;
+    height: 20cm;
+    border-radius: 25px;
+}
+
+
+/*Setting the size and position of the image box*/
+.userImage {
+    position: absolute;
+    right: 1.8cm;
+    top: 1.8cm;
+    width: 30%;
+    height: 10cm;
+}
+
+
+/*Setting the size and color of the font, 
+the hight of each line, the background color, 
+the padding, the border radius, color and style
+ and the position of the box*/
+.userInfo {
+    font-size: 30px;
+    color: #290db8;
+    line-height: 1.2;
+    background: rgb(255, 255, 255);
+    border-radius: 1cm;
+    padding: 0 30px;
+    border-color:#290db8;
+    border-style: solid;
+    position: relative;
+    width: 50%;
+    height: 18%;
+    left: 1cm;
+    top: 0.5cm;
+}
+
+
+/*Setting the size and color of the font, the hight of each line, 
+the background color, 
+the padding, the border radius, color and style
+ and the position of the box*/
+.userBio {
+    font-size: 30px;
+    color: #290db8;
+    line-height: 1.2;
+    background: rgb(255, 255, 255);
+    border-radius: 31px;
+    padding: 0 30px;
+    border-style: solid;
+    border-color:#290db8;
+    position: relative;
+    left: 1cm;
+    top: 0.5cm;
+    width: 90%;
+    height: 18%;
+}
+
+
+/*Setting the size and color of the font, the hight of each line, 
+the background color, 
+the padding, the border radius, color and style
+ and the position of the box*/
+.userName {
+    font-size: 25px;
+    color: #290db8;
+    line-height: 1.2;
+    background: rgb(255, 255, 255);
+    border-radius: 31px;
+    padding: 0 35px;
+    border-style: solid;
+    border-color:#290db8;
+    position: relative;
+    left: 15%;
+    top: 30%;
+    width: 70%;
+    height: 15%;
+}
+
+
+/*Setting the background color of the button,
+the border style, color, radius(which makes it round in the corners),
+font size, color and weight,
+aligning the text to be in the center, 
+size and position of the button
+and setting the cursor to look like a pointer*/
+.submitBtn {
+    background-color: #fafafa;
+    border-style: solid;
+    border-color:#290db8;
+    border-radius: 30px;
+    color: #290db8;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 18px;
+    text-align: center;
+    position: relative;
+    width: 30%;
+    height: 10%;
+    left: 35%;
+    top: 40%;
+}
+
+
+/*Setting the error box invisible,
+setting its size and position which, 
+setting a custom picture for the background and making it cover the whole box,
+and setting the opacity to 1*/
+.error { 
+    display: none;
+    position: relative;
+    background-image: url('images/purple.jpg');
+    background-size: cover;
+    opacity: 1;
+    top: 5%;
+    left: 40%;
+    width: 18%;
+    height: 10%;
+}
+
+
+/*Setting the position and font size of the error text*/
+.errText { 
+    left: 1.6cm;
+    top: 1.3cm;
+    position: relative;
+    font-size: 40px;
+}
+

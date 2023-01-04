@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="githubFront.css">
+    </head>
+</html>
+
+<body> 
+    <!--The div for background which contains a container--> 
+    <div class="background">
+        <!--This div is a container of the output and input divs-->
+        <div class="container">
+            <!--The div for output which contains 5 inner divs(name, blog, location, image, bio) --> 
+            <div class="output">
+                <!--The div for user image which is set to a "no pic" image initially-->
+                <img class="userImage" id="userImage" src='images/nopic.png'>
+                <!--The div for user full name-->
+                <div class="userInfo">
+                    <p id="userFullName">User Full Name:</p>
+                </div>
+                <!--The div for user blog-->
+                <div class="userInfo">
+                    <p id="userBlog">User Blog:</p>
+                </div>
+                <!--The div for user location-->
+                <div class="userInfo">
+                    <p id="userLocation">User Location:</p>
+                </div>
+                <!--The div for user bio-->
+                <div class="userBio">
+                    <p id="userBio">User Bio:</p>
+                </div>
+            </div>
+
+            <!--The div for input which contains 2 inner divs(username, submit) --> 
+            <div class="input">
+                <!--The div for username-->
+                <input id="userName" type="text" class="userName" placeholder="username">
+                <!--The div for submit button and setting the function that should be called when clicked-->
+                <button id="submitBtn" class="submitBtn" role="button" type="submit" onclick="checkLocalStorage()">
+                    submit
+                </button>
+            </div>
+        </div>
+        <!--Error div-->
+        <div class='error' id="error">
+            <p class='errtext' id="errText"></p>
+        </div>
+    </div>
+</body>
+
+
+<!--Setting the javascript file for this html-->
+<script type="text/javascript" src="githubBack.js"></script>
+</body>
